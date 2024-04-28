@@ -4,8 +4,37 @@ import { GoArrowRight } from "react-icons/go";
 import { FaPhoneAlt } from "react-icons/fa";
 
 import { Link } from 'react-router-dom';
+//motion framer
+import { motion } from 'framer-motion'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
 
 function Pocetna() {
+    const fadeInAnimationVariants = {
+        initial: {
+            opacity: 0,
+            y: 100
+
+        },
+        animate: {
+            opacity: 2,
+            y: 0,
+            transition: {
+                delay: 0.5,
+                duration: 3
+            }
+        }
+    }
     const telefonBroj = '064 94 95 922';
     return (
         // container
@@ -51,7 +80,69 @@ function Pocetna() {
                     <span className='text-blue-400 text-xl mb-20 text-center p-1'>Hvala vam što ste odabrali Pro Auto.</span>
                 </div>
             </div>
+            {/* Usluge */}
+            <div>
+                <motion.div
+                    variants={fadeInAnimationVariants}
+                    initial='initial'
+                    whileInView='animate'
+                    viewport={{
+                        once: true,
+                    }} className="bg-cover bg-center w-full lg:h-screen h-96 flex flex-col items-center justify-center" style={{ backgroundImage: 'url("/ksenon.webp")' }}>
+                    <h1 className='text-white lg:mb-20 md:mb-1 mb-8 text-4xl font-serif'>KOMENTARI</h1>
+                    <Swiper
+                        spaceBetween={30}
+                        centeredSlides={true}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        navigation={false}
+                        modules={[Autoplay, Pagination, Navigation]}
+                        className="mySwiper rounded-2xl text-white"
+                    >
+                        <SwiperSlide>
+                            <div className='text-white flex flex-col justify-center items-center h-full gap-5'>
+                                <p className='text-xl font-serif'>Svaka čast...pošteno ,precizno,profesionalno...<br />bravo!</p>
+                                <hr className='text-white w-[60%]' />
+                                <h2 className='text-3xl font-serif'>Goran</h2>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className='text-white flex flex-col justify-center items-center h-full gap-5'>
+                                <p className='text-xl font-serif'>Kvalitetan rad <br />(profesionalno odradjeno)</p>
+                                <hr className='text-white w-[60%]' />
+                                <h2 className='text-3xl font-serif'>Angelo</h2>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className='text-white flex flex-col justify-center items-center h-full gap-5'>
+                                <p className='text-xl font-serif'>Korektna saradnja.Termin ispoštovan.Profesionalno odradjen posao.</p>
+                                <hr className='text-white w-[60%]' />
+                                <h2 className='text-3xl font-serif'>Miodrag</h2>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className='text-white flex flex-col justify-center items-center h-full gap-5'>
+                                <p className='text-xl font-serif'>Čovek profesionalac.Sve moguce preporuke.</p>
+                                <hr className='text-white w-[60%]' />
+                                <h2 className='text-3xl font-serif'>Nikola</h2>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className='text-white flex flex-col justify-center items-center h-full gap-5'>
+                                <p className='text-xl font-serif'>Višegodišnja saradnja sa Jocom.Nema zamerki.</p>
+                                <hr className='text-white w-[60%]' />
+                                <h2 className='text-3xl font-serif'>Đorđe</h2>
+                            </div>
+                        </SwiperSlide>
 
+                    </Swiper>
+                </motion.div>
+            </div>
         </div >
     )
 }
