@@ -44,7 +44,7 @@ function Pocetna() {
                 <div className='w-[50%] bg-[#111827] flex text-center flex-col  items-center font-bold font-serif lg:h-[500px] md:h-[350px] h-[200px]'>
                     <h1 className='lg:text-5xl md:text-3xl text-white m-auto shadow-2xl p-5 text-xl'>MI BRINEMO O VASIM FAROVIMA</h1>
                     <p className='text-white text-xl m-5 hidden lg:block md:block'>Servis kojem mozete verovati</p>
-                    <hr className='w-[60%] text-white lg:mb-10 md:mb-6 border-2' />
+                    <hr className='w-[60%] text-white lg:mb-10 md:mb-6 border' />
                     <Link to={'/kontakt'} className='lg:text-3xl md:text-2xl text-white shadow-2xl p-5 text-l flex items-center gap-2'>KONTAKT<GoArrowRight /></Link>
                 </div>
                 <div className='w-[50%]'>
@@ -54,15 +54,16 @@ function Pocetna() {
             </div>
             {/* drugi deo */}
             <div className='flex lg:h-[500px] md:h-[390px] h-full mt-1 gap-1 flex-grow'>
-                <div className='w-[50%] lg:h-full md:h-[420px] h-[469px] p-5 flex flex-col justify-center gap-2 bg-black'>
+                <div className='w-[50%] lg:h-full md:h-[420px] h-[469px] p-5 flex flex-col justify-center gap-2 bg-[#111827]'>
                     <div className='flex gap-1'>
-                        <img className='w-[50%] rounded-l-3xl' src="/far1.webp" alt="ServisFara" />
-                        <img className='w-[50%] rounded-r-3xl' src="/far2.webp" alt="ProAuto" />
-
+                        <img className='w-[50%] rounded-l-3xl object-cover transform hover:scale-125 hover:cursor-pointer md:hover:scale-100 md:hover:cursor-auto transition-transform duration-500 ease-in-out' src="/far1.webp" alt="ServisFara" />
+                        <img className='w-[50%] rounded-r-3xl object-cover transform hover:scale-125 hover:cursor-pointer md:hover:scale-100 md:hover:cursor-auto transition-transform duration-500 ease-in-out' src="/far2.webp" alt="ProAuto" />
                     </div>
 
+
+
                     <div className='text-center mt-2 p-5'>
-                        <hr className='text-white border-2 w-full mx-auto' />
+                        <hr className='text-white border w-full mx-auto' />
                         <h2 className='text-white font-serif text-2xl mt-5'> Servis fara BMW serije 5</h2>
                         <div className='mt-5'>
                             <p className='text-white font-serif lg:text-2xl text-l'>Pozovite nas i zakazite svoj termin.</p>
@@ -72,7 +73,7 @@ function Pocetna() {
                 </div>
                 <div className='w-[50%] lg:h-full md:h-[420px] h-[469px] bg-[#111827] flex flex-col items-center justify-center'>
                     <h1 className='lg:text-5xl md:text-3xl text-white shadow-2xl p-5 text-xl font-bold font-serif'>O NAMA</h1>
-                    <hr className='text-white w-[70%] border-2 ' />
+                    <hr className='text-white w-[70%] border ' />
                     <p className='text-white lg:text-2xl md:text-xl text-l text-center lg:p-10 h-full items-center mt-2 p-1'>
                         Dobrodošli u Pro Auto – vašeg pouzdanog partnera za sve što se tiče održavanja i popravki farova vašeg automobila.
                         U Pro Autu, naša misija je ne samo popraviti vaše farove, već i pružiti vam iskustvo koje nadmašuje vaša očekivanja.
