@@ -9,7 +9,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 // motion
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 function Navbar() {
@@ -19,6 +19,7 @@ function Navbar() {
     const handleClick = () => {
         setToggle(!toggle);
     };
+
 
     useEffect(() => {
         const handleResize = () => {
@@ -74,9 +75,9 @@ function Navbar() {
                                     className='p-5'
                                 >
                                     <ul className='flex lg:visible text-gray-700 lg:text-2xl md:text-2xl text-xl font-bold font-mono bg-white gap-5 p-2 text-center rounded-b-lg ' style={{ backgroundColor: '#030712', color: 'white' }}>
-                                        <Link to={'/'} className='hover:transition-transform duration-400 transform hover:scale-125 cursor-pointer'>Početna</Link>
-                                        <Link to={'/usluge'} className='hover:transition-transform duration-400 transform hover:scale-125 cursor-pointer'>Usluge</Link>
-                                        <Link to={'/kontakt'} className='hover:transition-transform duration-400 transform hover:scale-125 cursor-pointer'>Kontakt</Link>
+                                        <NavLink to={'/'} className='hover:transition-transform duration-400 transform hover:scale-125 cursor-pointer'>Početna</NavLink>
+                                        <NavLink to={'/usluge'} className='hover:transition-transform duration-400 transform hover:scale-125 cursor-pointer'>Usluge</NavLink>
+                                        <NavLink to={'/kontakt'} className='hover:transition-transform duration-400 transform hover:scale-125 cursor-pointer'>Kontakt</NavLink>
                                     </ul>
 
                                 </motion.div>
