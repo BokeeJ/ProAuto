@@ -59,7 +59,7 @@ function Navbar() {
 
                 {/* {slika} */}
                 <div className='flex items-center justify-center '>
-                    <img className='lg:w-[280px] rounded-md lg:h-[180px]  w-[200px] h-[150px] shadow-xl border ' src="/pro auto.webp" alt="ProAuto" />
+                    <img className='lg:w-[280px] rounded-md lg:h-[180px]  w-[200px] h-[150px] shadow-xl border ' src="/ProAuto.webp" alt="ProAuto" />
                 </div>
                 <div className='gap-4 flex flex-col items-center justify-center'>
 
@@ -73,7 +73,7 @@ function Navbar() {
                                     transition={{ duration: 0.5 }}
                                     className='p-5'
                                 >
-                                    <ul className='flex lg:visible text-gray-700 lg:text-2xl md:text-2xl text-xl bg-white gap-5 p-2 text-center rounded-b-lg ' style={{ backgroundColor: '#030712', color: 'white' }}>
+                                    <ul className='flex lg:visible text-gray-700 lg:text-2xl md:text-2xl text-xl font-bold font-mono bg-white gap-5 p-2 text-center rounded-b-lg ' style={{ backgroundColor: '#030712', color: 'white' }}>
                                         <Link to={'/'} className='hover:transition-transform duration-400 transform hover:scale-125 cursor-pointer'>Početna</Link>
                                         <Link to={'/usluge'} className='hover:transition-transform duration-400 transform hover:scale-125 cursor-pointer'>Usluge</Link>
                                         <Link to={'/kontakt'} className='hover:transition-transform duration-400 transform hover:scale-125 cursor-pointer'>Kontakt</Link>

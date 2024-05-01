@@ -14,7 +14,7 @@ function Footer() {
                 <p className='text-xl'>Vikendom ne radimo</p>
             </div>
             <hr className='text-white w-[50%] lg:hidden' />
-            <div className='flex flex-col text-white p-10 gap-2 items-center font-serif'>
+            <div className='flex flex-col text-white p-10 gap-2 items-center justify-center font-serif'>
                 <h1 className='text-3xl'>Zaprati Nas:</h1>
                 <a href='https://www.facebook.com/ProAutoLAZAREVAC/?locale=sr_RS' target='_blank' className='flex gap-2'><FaFacebook size={25} /><span className='text-xl mr-2'>Facebook</span></a>
                 <a href="https://www.instagram.com/servis_farova_proauto/" target='_blank' className='flex'><GrInstagram size={25} className='mr-2' /><span className='text-xl'>Instagram</span></a>
