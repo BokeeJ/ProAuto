@@ -16,26 +16,26 @@ function Navbar() {
     const telefonBroj = '064 94 95 922';
     const [toggle, setToggle] = useState(true);
 
-    const handleClick = () => {
-        setToggle(!toggle);
-    };
+    // const handleClick = () => {
+    //     setToggle(!toggle);
+    // };
 
 
-    useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth > 768) {
-                setToggle(true);
-            }
-            else if (window.innerWidth < 768) {
-                setToggle(false);
+    // useEffect(() => {
+    //     const handleResize = () => {
+    //         if (window.innerWidth > 768) {
+    //             setToggle(true);
+    //         }
+    //         else if (window.innerWidth < 768) {
+    //             setToggle(false);
 
-            }
-        };
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+    //         }
+    //     };
+    //     window.addEventListener('resize', handleResize);
+    //     return () => {
+    //         window.removeEventListener('resize', handleResize);
+    //     };
+    // }, []);
 
     return (
         // {container}
@@ -47,7 +47,7 @@ function Navbar() {
                     <a href='https://www.google.com/maps/dir//svetozara+markovic+1,+Lazarevac/@44.3803016,20.1974505,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x475a01d94d0752e7:0x4c41a02f529df390!2m2!1d20.2798512!2d44.3803312?hl=sr&entry=ttu' aria-label="Location" className='justify-center items-center flex text-white gap-1 text-xl font-serif' target='_blank'><FaLocationDot size={25} color='white' /><span className='lg:block md:block hidden'>Lokacija</span></a>
                 </div>
                 <div>
-                    <GiHamburgerMenu onClick={handleClick} className='lg:hidden md:hidden cursor-pointer' color='white' size={30} />
+                    {/* <GiHamburgerMenu className='lg:hidden md:hidden cursor-pointer' color='white' size={30} /> */}
                 </div>
                 <div className='flex lg:mr-10'>
                     <a href='https://www.facebook.com/ProAutoLAZAREVAC/?locale=sr_RS' aria-label="Facebook" target='_blank' className='text-white mr-5 justify-center flex gap-1 text-xl font-serif'><FaFacebook size={25} /><span className='lg:block md:block hidden'>Facebook</span></a>
