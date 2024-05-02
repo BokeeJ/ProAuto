@@ -38,7 +38,7 @@ function Usluge() {
                         }} className='flex flex-col gap-10 max-w-[400px] '>
                         <h2 className='text-2xl'><span className='bg-red-800 w-5 h-5 rounded-full text-red-800 mr-5'>^</span>Reparacija/Servis farova</h2>
                         <hr className='border border-white' />
-                        <p className='text-white lg:text-xl md:text-xl text-l p-5 text-center p-5'>Profesionalni servis farova obično koristi specijalizovanu opremu i tehnike kako bi se postigao visok kvalitet popravke i održavanja. <br />Osim estetskih razloga, redovno održavanje farova može povećati bezbednost vozača i putnika, smanjiti rizik od saobraćajnih nesreća i produžiti životni vek farova.</p>
+                        <p className='text-white lg:text-xl md:text-xl text-l  text-center p-5'>Profesionalni servis farova obično koristi specijalizovanu opremu i tehnike kako bi se postigao visok kvalitet popravke i održavanja. <br />Osim estetskih razloga, redovno održavanje farova može povećati bezbednost vozača i putnika, smanjiti rizik od saobraćajnih nesreća i produžiti životni vek farova.</p>
                         <h2 className='text-2xl'><span className='bg-red-800 rounded-full text-red-800 mr-5'>^</span>Zamena projektora</h2>
                         <hr className='border border-white' />
                         <p className='text-white lg:text-xl md:text-xl text-l text-center p-5'>Zamena projektora je ključna usluga koja se pruža vlasnicima vozila radi održavanja i poboljšanja efikasnosti osvetljenja.<br /> Projektori su važni delovi sistema osvetljenja vozila koji pružaju snažan i fokusiran svetlosni snop kako bi se obezbedila optimalna vidljivost vozaču tokom vožnje, posebno noću ili u uslovima loše vidljivosti.</p>
@@ -66,7 +66,7 @@ function Usluge() {
             </div>
             <div className='lg:w-full md:w-full w-[80%] mx-auto items-center justify-center flex'>
                 <div className='w-full h-[200px] bg-[#111827] justify-center flex '>
-                    <div className='bg-red-500 gap-1 w-[400px] justify-center flex flex-col text-white font-mono rounded-xl gap-2'>
+                    <div className='bg-red-500 gap-1 w-[400px] justify-center flex flex-col text-white font-mono rounded-xl '>
                         <li className='ml-5'>ZAKAZIVANJE</li>
                         <li className='ml-5'>USPOSTAVA PROBLEMA</li>
                         <li className='ml-5'>PROVERA</li>
