@@ -48,7 +48,7 @@ function Pocetna() {
                     <Link to={'/kontakt'} className='lg:text-3xl md:text-2xl text-white shadow-2xl p-5 text-l flex items-center gap-2'>KONTAKT<GoArrowRight /></Link>
                 </div>
                 <div className='w-[50%]'>
-                    <img src="/Audi1.webp" alt="Audi A6" className='w-full lg:h-[500px] md:h-[350px] h-[200px]' loading="lazy" />
+                    <img src="/Audi1.webp" rel="preload" alt="Audi A6" className='w-full lg:h-[500px] md:h-[350px] h-[200px]' loading="lazy" />
                 </div>
 
 
@@ -56,9 +56,9 @@ function Pocetna() {
             {/* drugi deo */}
             <div className='flex lg:h-[500px] md:h-[390px] h-full mt-1 gap-1 flex-grow'>
                 <div className='w-[50%] lg:h-full md:h-[420px] h-[469px] p-5 flex flex-col justify-center gap-2 bg-[#111827]'>
-                    <div className='flex gap-1'>
-                        <img className='w-[50%] rounded-l-3xl object-cover transform hover:scale-125 hover:cursor-pointer md:hover:scale-100 md:hover:cursor-auto transition-transform duration-500 ease-in-out' src="/far1.webp" alt="ServisFara" />
-                        <img className='w-[50%] rounded-r-3xl object-cover transform hover:scale-125 hover:cursor-pointer md:hover:scale-100 md:hover:cursor-auto transition-transform duration-500 ease-in-out' src="/far2.webp" alt="ProAuto" />
+                    <div className='flex gap-1 w-[50%]'>
+                        <img className='w-full h-full rounded-l-3xl ' src="/far1.webp" alt="ServisFara" />
+                        <img className='w-full h-full rounded-r-3xl ' src="/far2.webp" alt="ProAuto" />
                     </div>
 
 
