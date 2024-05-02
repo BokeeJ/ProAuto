@@ -67,7 +67,7 @@ function Pocetna() {
                         <h2 className='text-white font-serif text-2xl mt-5'> Servis fara BMW serije 5</h2>
                         <div className='mt-5'>
                             <p className='text-white font-serif lg:text-2xl text-l'>Pozovite nas i zakazite svoj termin.</p>
-                            <a href={`tel:${telefonBroj}`} className='text-white font-serif text-2xl ml-5 mt-5 justify-center flex' target='_blank'><FaPhoneAlt size={25} /></a>
+                            <a href={`tel:${telefonBroj}`} aria-label="Call on icon" className='text-white font-serif text-2xl ml-5 mt-5 justify-center flex' target='_blank'><FaPhoneAlt size={25} /></a>
                         </div>
                     </div>
                 </div>
