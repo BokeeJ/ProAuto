@@ -48,7 +48,7 @@ function Pocetna() {
                     <Link to={'/kontakt'} className='lg:text-3xl md:text-2xl text-white shadow-2xl p-5 text-l flex items-center gap-2'>KONTAKT<GoArrowRight /></Link>
                 </div>
                 <div className='w-[50%]'>
-                    <img src="/Audi.webp" alt="Audi A6" className='w-full lg:h-[500px] md:h-[350px] h-[200px]' />
+                    <img src="/Audi1.webp" alt="Audi A6" className='w-full lg:h-[500px] md:h-[350px] h-[200px]' />
                 </div>
 
             </div>
