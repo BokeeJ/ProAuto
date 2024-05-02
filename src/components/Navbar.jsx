@@ -55,7 +55,7 @@ function Navbar() {
                 </div>
 
             </div>
-            <div className='lg:flex md:flex h-[200px] gap-5 flex items-center w-full border-b-2 bg-[#030712] lg:h-[320px] md:h-[290px] p-5 flex-col '>
+            <div className='lg:flex md:flex h-[270px] gap-5 flex items-center w-full border-b-2 bg-[#030712] lg:h-[320px] md:h-[290px] p-5 flex-col '>
                 {/* {telefon} */}
 
                 {/* {slika} */}
