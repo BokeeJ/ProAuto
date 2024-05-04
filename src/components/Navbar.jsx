@@ -74,10 +74,10 @@ function Navbar() {
                                     transition={{ duration: 0.5 }}
                                     className='p-5'
                                 >
-                                    <ul className='flex lg:visible text-gray-700 lg:text-2xl md:text-2xl text-xl font-bold font-mono bg-white gap-5 p-2 text-center rounded-b-lg ' style={{ backgroundColor: '#030712', color: 'white' }}>
-                                        <NavLink to={'/'} className='hover:transition-transform duration-400 transform hover:scale-125 cursor-pointer'>Početna</NavLink>
-                                        <NavLink to={'/usluge'} className='hover:transition-transform duration-400 transform hover:scale-125 cursor-pointer'>Usluge</NavLink>
-                                        <NavLink to={'/kontakt'} className='hover:transition-transform duration-400 transform hover:scale-125 cursor-pointer'>Kontakt</NavLink>
+                                    <ul className='flex lg:visible text-gray-700 lg:text-2xl md:text-2xl text-xl font-bold font-serif font-mono bg-white gap-5 p-2 text-center rounded-b-lg ' style={{ backgroundColor: '#030712', color: 'white' }}>
+                                        <NavLink to={'/'} className='hover:transition-transform duration-500 transform hover:scale-125 cursor-pointer'>Početna</NavLink>
+                                        <NavLink to={'/usluge'} className='hover:transition-transform duration-500 transform hover:scale-125 cursor-pointer'>Usluge</NavLink>
+                                        <NavLink to={'/kontakt'} className='hover:transition-transform duration-500 transform hover:scale-125 cursor-pointer'>Kontakt</NavLink>
                                     </ul>
 
                                 </motion.div>

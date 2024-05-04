@@ -82,9 +82,9 @@ function Kontakt() {
                     className='lg:w-[50%] h-full w-[80%] bg-black rounded-2xl opacity-80'>
                     <h1 className='text-white font-bold text-4xl text-center p-10'>POŠALJI NAM EMAIL</h1>
                     <form className='flex flex-col gap-5  p-10' ref={form} onSubmit={sendEmail}>
-                        <input className='text-xl h-10 p-1' placeholder='Ime' type="text" name="user_name" />
-                        <input className='text-xl h-10 p-1' placeholder='E-mail' type="email" name="user_email" />
-                        <textarea className='w-full h-[120px] p-1' placeholder='Poruka' name="message" />
+                        <input className='text-xl h-10 p-4 rounded-xl' placeholder='Ime' type="text" name="user_name" />
+                        <input className='text-xl h-10 p-4 rounded-xl' placeholder='E-mail' type="email" name="user_email" />
+                        <textarea className='w-full h-[120px] text-xl p-4 rounded-xl' placeholder='Poruka...' name="message" />
                         <button className='text-2xl text-red-800 border-white border-2 rounded-3xl p-3 font-bold font-mono' type="submit" value="Send">Send</button>
                     </form>
                 </motion.div>

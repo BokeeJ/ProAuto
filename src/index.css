@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .active {
-	@apply border-white border text-white font-bold text-xl  px-4 rounded-2xl;
+	@apply border-white border text-white font-medium text-blue-400 px-5  rounded-2xl;
 }
 
 #app {
