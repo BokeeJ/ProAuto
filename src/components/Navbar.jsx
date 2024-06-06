@@ -49,7 +49,7 @@ function Navbar() {
                 <div>
                     {/* <GiHamburgerMenu className='lg:hidden md:hidden cursor-pointer' color='white' size={30} /> */}
                 </div>
-                <div className='flex lg:mr-10'>
+                <div className='flex lg:mr-10 '>
                     <a href='https://www.facebook.com/ProAutoLAZAREVAC/?locale=sr_RS' aria-label="Facebook" target='_blank' className='text-white mr-5 justify-center flex gap-1 text-xl font-serif'><FaFacebook size={25} /><span className='lg:block md:block hidden'>Facebook</span></a>
                     <a href="https://www.instagram.com/servis_farova_proauto/" aria-label="Instagram" target='_blank' className='text-white mr-3 justify-center flex text-xl font-serif'><GrInstagram size={25} className='lg:mr-2' /><span className='lg:block md:block hidden'>Instagram</span></a>
                 </div>
@@ -75,9 +75,9 @@ function Navbar() {
                                     className='p-5'
                                 >
                                     <ul className='flex lg:visible text-gray-700 lg:text-2xl md:text-2xl text-xl font-bold font-serif font-mono bg-white gap-5 p-2 text-center rounded-b-lg ' style={{ backgroundColor: '#030712', color: 'white' }}>
-                                        <NavLink to={'/'} className='hover:transition-transform duration-500 transform hover:scale-125 cursor-pointer'>Početna</NavLink>
-                                        <NavLink to={'/usluge'} className='hover:transition-transform duration-500 transform hover:scale-125 cursor-pointer'>Usluge</NavLink>
-                                        <NavLink to={'/kontakt'} className='hover:transition-transform duration-500 transform hover:scale-125 cursor-pointer'>Kontakt</NavLink>
+                                        <NavLink to={'/'} className=''>Početna</NavLink>
+                                        <NavLink to={'/usluge'} className=''>Usluge</NavLink>
+                                        <NavLink to={'/kontakt'} className=''>Kontakt</NavLink>
                                     </ul>
 
                                 </motion.div>

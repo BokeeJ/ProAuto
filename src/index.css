@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .active {
-	@apply border-white border text-white font-medium text-blue-400 px-5  rounded-2xl;
+	color: rgb(96, 165, 250);
 }
 
 #app {
